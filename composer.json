@@ -1,0 +1,19 @@
+{
+    "name": "gabrieldy/pdc10-classes",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gabriel Dy",
+            "email": "dy.gabrielrhobert@auf.edu.ph"
+        }
+    ],
+    "require": {
+        "mustache/mustache": "^2.14",
+        "vlucas/phpdotenv": "^5.4",
+        "fakerphp/faker": "^1.20"
+    }
+}

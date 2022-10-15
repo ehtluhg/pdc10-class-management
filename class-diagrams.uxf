@@ -1,0 +1,56 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>330</x><y>60</y><w>210</w><h>210</h></coordinates><panel_attributes>Class
+--
+#id: int
+#name: string
+#description: string
+#classCode: string
+#teacherID: string
+--
++createClass(name,desc,classCode)
++update(name,desc,classCode)
++remove()
++assignTeacher(teacher)
++getName()
++getDescription()
++getCode()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>40</x><y>60</y><w>210</w><h>210</h></coordinates><panel_attributes>Teacher
+--
+#id: int
+#firstName: string
+#lastName: string
+#email: string
+#phoneNumber: string
+#teacherCode: string
+--
++addTeacher(firstName,lastName,email,phoneNumber,teacherCode)
++update(firstName,lastName,email,phoneNumber,code)
++remove()
++showAssignedClasses()
++getName()
++getDescription()
++getCode()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>340</y><w>410</w><h>160</h></coordinates><panel_attributes>Class Roster
+--
+#classCode: string
+#studentNumber: int
+#enrolledAt: string
+--
++showClassRoster(classRoster)
++addStudent(firstName,lastName,email,phoneNumber,studentCode)
++update(name,desc,classRosterCode)
++remove()
++exportClassRoster()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>60</y><w>210</w><h>210</h></coordinates><panel_attributes>Student
+--
+#id: int
+#firstName: string
+#lastName: string
+#studentNumber: int
+#email: string
+#phoneNumber: string
+#program: string
+--
++addStudent(firstName,lastName,email,phoneNumber,studentCode)
++update(firstName,lastName,email,phoneNumber,studentCode)
++remove()
++showEnrolledClasses()
++getName()
++getDescription()
++getCode()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>160</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>90;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>420</x><y>260</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>260</y><w>320</w><h>90</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;70;300;10</additional_attributes></element></diagram>
